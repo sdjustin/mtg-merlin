@@ -15,6 +15,7 @@
 			}
 		</style>
 		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 
 		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 		<!--[if lt IE 9]>
@@ -61,9 +62,43 @@
 		</div>
 
 		<div class="container">
-
+			<div id="card-wrapper">
+				<div id="previous" class="hidden-phone"><!-- Image defined in style.css --></div>
+				<div id="card">
+					<div id="card-art"><!-- Image defined in style.css --></div>
+					<ul id="card-bgs">
+						<li id="card-bg-1" class="current"><!-- Image provided --></li>
+						<li id="card-bg-2"><!-- Image provided --></li>
+					</ul>
+				</div>
+				<div id="next" class="hidden-phone"><!-- Image defined in style.css --></div>
+			</div>
+			<div id="controls">
+				<div id="card-count-wrapper">
+					<small id="card-count">9999/9999</small>
+				</div>
+				<div id="timer-wrapper">
+					<small id="timer">99:99:99</small>
+				</div>
+				<div id="buttons-wrapper">
+					<button id="match" type="button" class="btn btn-primary">Match</button>
+					<button id="done" type="button" class="btn">Done</button>
+				</div>
+			</div>
 		</div>
 		<!-- /container -->
+		
+		<div id="footer" class="navbar navbar-fixed-bottom">
+			<div class="navbar-inner">
+				<div class="container">
+					<small>MTG Merlin is not affiliated with, endorsed, sponsored, or specifically approved by Wizards of the Coast LLC. MTG Merlin may use the trademarks and other intellectual property of Wizards of the Coast LLC, which is permitted under <a href="http://www.wizards.com/fankit/fantoolkitdnd.html">Wizards' Fan Site Policy</a>.</small>
+					<!-- Everything you want hidden at 940px or less, place within here -->
+					<div class="nav-collapse collapse">
+						<!-- .nav, .navbar-search, .navbar-form, etc -->
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- Le javascript
 		================================================== -->
