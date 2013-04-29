@@ -40,28 +40,62 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="brand" href="#">MTG Merlin</a>
+					<a id="homeView" class="brand">MTG Merlin</a>
 					<div class="nav-collapse collapse">
 						<ul class="nav">
 							<li class="active">
-								<a href="#">Play</a>
+								<a id="playView">Play</a>
 							</li>
 							<li>
-								<a href="#about">How To</a>
+								<a id="howToView">How To</a>
 							</li>
 							<li>
-								<a href="#profile">Profile</a>
+								<a id="profileView">Profile</a>
 							</li>
 							<li>
-								<a href="#rankings">Rankings</a>
+								<a id="rankingsView">Rankings</a>
 							</li>
 						</ul>
-					</div><!--/.nav-collapse -->
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="container">
+		<div id="screen" class="container">
+			
+		</div>
+		
+		<div id="footer" class="navbar navbar-fixed-bottom">
+			<div class="navbar-inner">
+				<div class="container">
+					<small>MTG Merlin is not affiliated with, endorsed, sponsored, or specifically approved by Wizards of the Coast LLC. MTG Merlin may use the trademarks and other intellectual property of Wizards of the Coast LLC, which is permitted under <a href="http://www.wizards.com/fankit/fantoolkitdnd.html">Wizards' Fan Site Policy</a>.</small>
+					<!-- Everything you want hidden at 940px or less, place within here -->
+				</div>
+			</div>
+		</div>
+
+		<!-- Handlebar templates -->
+		<script id="home-template" type="text/x-handlebars-template">
+			<h1>MTG Merlin</h1>
+		</script>
+		
+		<script id="play-template" type="text/x-handlebars-template">
+			<button id="play" type="button" class="btn">Play</button>
+		</script>
+		
+		<script id="howTo-template" type="text/x-handlebars-template">
+			<h1>How To</h1>
+		</script>
+		
+		<script id="profile-template" type="text/x-handlebars-template">
+			<h1>Profile</h1>
+		</script>
+		
+		<script id="rankings-template" type="text/x-handlebars-template">
+			<h1>Rankings</h1>
+		</script>
+		
+		<script id="play-action-template" type="text/x-handlebars-template">
 			<div id="card-wrapper">
 				<div id="previous" class="hidden-phone"><!-- Image defined in style.css --></div>
 				<div id="card">
@@ -69,6 +103,9 @@
 					<ul id="card-bgs">
 						<li id="card-bg-1" class="current"><!-- Image provided --></li>
 						<li id="card-bg-2"><!-- Image provided --></li>
+						<li id="card-bg-3"><!-- Image provided --></li>
+						<li id="card-bg-4"><!-- Image provided --></li>
+						<li id="card-bg-5"><!-- Image provided --></li>
 					</ul>
 				</div>
 				<div id="next" class="hidden-phone"><!-- Image defined in style.css --></div>
@@ -85,26 +122,12 @@
 					<button id="done" type="button" class="btn">Done</button>
 				</div>
 			</div>
-		</div>
-		<!-- /container -->
-		
-		<div id="footer" class="navbar navbar-fixed-bottom">
-			<div class="navbar-inner">
-				<div class="container">
-					<small>MTG Merlin is not affiliated with, endorsed, sponsored, or specifically approved by Wizards of the Coast LLC. MTG Merlin may use the trademarks and other intellectual property of Wizards of the Coast LLC, which is permitted under <a href="http://www.wizards.com/fankit/fantoolkitdnd.html">Wizards' Fan Site Policy</a>.</small>
-					<!-- Everything you want hidden at 940px or less, place within here -->
-					<div class="nav-collapse collapse">
-						<!-- .nav, .navbar-search, .navbar-form, etc -->
-					</div>
-				</div>
-			</div>
-		</div>
+		</script>
+		<!-- End of Handlebar templates -->
 
-		<!-- Le javascript
-		================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/handlebars.js"></script>
 		<script src="js/mtg-merlin.js"></script>
 	</body>
 </html>
